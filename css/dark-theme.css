@@ -1,0 +1,1085 @@
+/* Dark Theme CSS */
+:root {
+  /* Dark theme color variables */
+  --dark-bg-primary: #0a0a0a;
+  --dark-bg-secondary: #1a1a1a;
+  --dark-bg-tertiary: #2a2a2a;
+  --dark-bg-card: #1e1e1e;
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #b0b0b0;
+  --dark-text-muted: #888888;
+  --dark-border: #333333;
+  --dark-accent: #007bff;
+  --dark-accent-hover: #0056b3;
+  --dark-shadow: rgba(0, 0, 0, 0.5);
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* Hero Section Enhancements */
+body:not(.light-theme) .hero .slider-text .text {
+  padding: 2rem;
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body:not(.light-theme) .hero .slider-text .subheading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+body:not(.light-theme) .hero .slider-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+body:not(.light-theme) .hero .slider-text h1 span {
+  color: var(--dark-accent);
+  position: relative;
+}
+
+body:not(.light-theme) .hero .slider-text h1 span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--dark-accent);
+  border-radius: 2px;
+}
+
+body:not(.light-theme) .hero .slider-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--dark-text-secondary);
+}
+
+body:not(.light-theme) .hero-buttons .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+body:not(.light-theme) .hero-buttons .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+body:not(.light-theme) .hero-buttons .btn:hover::before {
+  left: 100%;
+}
+
+body:not(.light-theme) .hero-features {
+  margin-top: 2rem;
+}
+
+body:not(.light-theme) .hero-features .d-flex {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+body:not(.light-theme) .hero-features i {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  color: var(--dark-accent);
+}
+
+body:not(.light-theme) .hero-features span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-text-secondary);
+}
+
+/* Counter Section Enhancements */
+body:not(.light-theme) .ftco-counter .block-18 {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+body:not(.light-theme) .ftco-counter .block-18::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--dark-accent), var(--dark-accent-hover));
+}
+
+body:not(.light-theme) .ftco-counter .block-18:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+  border-color: var(--dark-accent);
+}
+
+body:not(.light-theme) .ftco-counter .icon {
+  background: var(--dark-bg-tertiary);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+body:not(.light-theme) .ftco-counter .icon span {
+  font-size: 1.5rem;
+  color: var(--dark-accent);
+}
+
+body:not(.light-theme) .ftco-counter .text .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+body:not(.light-theme) .ftco-counter .text span {
+  font-size: 1rem;
+  color: var(--dark-text-secondary);
+  font-weight: 500;
+}
+
+/* CV Section Styles */
+body:not(.light-theme) .cv-section {
+  margin-bottom: 3rem;
+}
+
+body:not(.light-theme) .cv-section-title {
+  color: var(--dark-text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--dark-accent);
+  display: flex;
+  align-items: center;
+}
+
+body:not(.light-theme) .cv-section-title i {
+  color: var(--dark-accent);
+  font-size: 1.3rem;
+}
+
+body:not(.light-theme) .cv-item {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+body:not(.light-theme) .cv-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--dark-accent);
+}
+
+body:not(.light-theme) .cv-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+  border-color: var(--dark-accent);
+}
+
+body:not(.light-theme) .cv-item-header {
+  margin-bottom: 1rem;
+}
+
+body:not(.light-theme) .cv-item-header h4 {
+  color: var(--dark-text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+body:not(.light-theme) .cv-company {
+  color: var(--dark-accent);
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+body:not(.light-theme) .cv-date {
+  color: var(--dark-text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  display: block;
+}
+
+body:not(.light-theme) .cv-item-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body:not(.light-theme) .cv-item-content li {
+  color: var(--dark-text-secondary);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+body:not(.light-theme) .cv-item-content li::before {
+  content: '▸';
+  color: var(--dark-accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+body:not(.light-theme) .cv-item-content li strong {
+  color: var(--dark-text-primary);
+}
+
+/* Apply dark theme to body (only when light-theme class is not present) */
+body:not(.light-theme) {
+  background-color: var(--dark-bg-primary) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+/* Navigation */
+body:not(.light-theme) .ftco-navbar-light {
+  background-color: var(--dark-bg-secondary) !important;
+  border-bottom: 1px solid var(--dark-border) !important;
+}
+
+body:not(.light-theme) .ftco-navbar-light .navbar-brand {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
+body:not(.light-theme) .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .ftco-navbar-light .navbar-toggler {
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+/* Hero section */
+body:not(.light-theme) .hero {
+  background-color: var(--dark-bg-primary) !important;
+}
+
+body:not(.light-theme) .owl-carousel.home-slider .slider-item .overlay {
+  background: var(--dark-overlay) !important;
+}
+
+body:not(.light-theme) .owl-carousel.home-slider .slider-item .slider-text .text {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .owl-carousel.home-slider .slider-item .slider-text .subheading {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Sections */
+body:not(.light-theme) .ftco-section {
+  background-color: var(--dark-bg-primary) !important;
+}
+
+body:not(.light-theme) .bg-light {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+/* Cards and containers */
+body:not(.light-theme) .bg-white {
+  background-color: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+body:not(.light-theme) .rounded-lg {
+  background-color: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+/* Text colors */
+body:not(.light-theme) h1, 
+body:not(.light-theme) h2, 
+body:not(.light-theme) h3, 
+body:not(.light-theme) h4, 
+body:not(.light-theme) h5, 
+body:not(.light-theme) h6 {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) p {
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .text-muted {
+  color: var(--dark-text-muted) !important;
+}
+
+/* Buttons */
+body:not(.light-theme) .btn-primary {
+  background-color: var(--dark-accent) !important;
+  border-color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .btn-primary:hover {
+  background-color: var(--dark-accent-hover) !important;
+  border-color: var(--dark-accent-hover) !important;
+}
+
+body:not(.light-theme) .btn-outline-primary {
+  color: var(--dark-accent) !important;
+  border-color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .btn-outline-primary:hover {
+  background-color: var(--dark-accent) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .btn-white {
+  background-color: var(--dark-bg-card) !important;
+  color: var(--dark-text-primary) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+body:not(.light-theme) .btn-white:hover {
+  background-color: var(--dark-bg-tertiary) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+/* Forms */
+body:not(.light-theme) .form-control {
+  background-color: var(--dark-bg-card) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .form-control:focus {
+  background-color: var(--dark-bg-card) !important;
+  border-color: var(--dark-accent) !important;
+  color: var(--dark-text-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+body:not(.light-theme) .form-control::placeholder {
+  color: var(--dark-text-muted) !important;
+}
+
+/* Progress circles */
+body:not(.light-theme) .progress-circle .progress {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+body:not(.light-theme) .progress-circle .progress .progress-bar {
+  border-color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .progress-circle .progress-value {
+  color: var(--dark-text-primary) !important;
+}
+
+/* Services */
+body:not(.light-theme) .services {
+  background-color: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+body:not(.light-theme) .services:hover {
+  background-color: var(--dark-bg-tertiary) !important;
+  border-color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .services .icon {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+body:not(.light-theme) .services .icon span {
+  color: var(--dark-accent) !important;
+}
+
+/* Projects */
+body:not(.light-theme) .project {
+  background-color: var(--dark-bg-card) !important;
+}
+
+body:not(.light-theme) .project .overlay {
+  background: var(--dark-overlay) !important;
+}
+
+body:not(.light-theme) .project .text {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .project .text h3 a {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .project .text span {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Blog */
+body:not(.light-theme) .blog-entry .text {
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .blog-entry .text .heading a {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .blog-entry .text .heading a:hover {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .blog-entry .meta {
+  color: var(--dark-text-muted) !important;
+}
+
+body:not(.light-theme) .blog-entry .meta a {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .blog-entry .meta a:hover {
+  color: var(--dark-accent-hover) !important;
+}
+
+/* Contact */
+body:not(.light-theme) .contact-section .contact-form {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+}
+
+body:not(.light-theme) .dbox {
+  background-color: var(--dark-bg-card) !important;
+}
+
+body:not(.light-theme) .dbox p {
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .dbox p span {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .dbox p a {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .dbox .icon {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+body:not(.light-theme) .dbox .icon span {
+  color: var(--dark-accent) !important;
+}
+
+/* Footer Improvements */
+body:not(.light-theme) .ftco-footer {
+  background: var(--dark-bg-secondary) !important;
+  border-top: 1px solid var(--dark-border);
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget {
+  margin-bottom: 2rem;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget h2 {
+  color: var(--dark-text-primary) !important;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--dark-accent);
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget ul li {
+  margin-bottom: 0.75rem;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget ul li a {
+  color: var(--dark-text-secondary) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget ul li a:hover {
+  color: var(--dark-accent) !important;
+  transform: translateX(5px);
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-widget ul li a i {
+  margin-right: 0.5rem;
+  color: var(--dark-accent);
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-social li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--dark-bg-tertiary);
+  color: var(--dark-text-secondary) !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+body:not(.light-theme) .ftco-footer .ftco-footer-social li a:hover {
+  background: var(--dark-accent);
+  color: var(--dark-text-primary) !important;
+  transform: translateY(-3px);
+}
+
+/* Testimonials */
+body:not(.light-theme) .testimony-section {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+body:not(.light-theme) .testimony-wrap {
+  background-color: var(--dark-bg-card) !important;
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .testimony-wrap .name {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .testimony-wrap .position {
+  color: var(--dark-text-muted) !important;
+}
+
+/* Counter */
+body:not(.light-theme) .ftco-counter {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+body:not(.light-theme) .ftco-counter .block-18 {
+  background-color: var(--dark-bg-card) !important;
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .ftco-counter .icon {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+body:not(.light-theme) .ftco-counter .icon span {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .ftco-counter .text .number {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .ftco-counter .text span {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Hire me section */
+body:not(.light-theme) .ftco-hireme {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+body:not(.light-theme) .ftco-hireme h2 {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .ftco-hireme p {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* About section */
+body:not(.light-theme) .ftco-about ul.about-info li {
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .ftco-about ul.about-info li span:first-child {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .ftco-about .my-interest .interest-wrap .icon {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+body:not(.light-theme) .ftco-about .my-interest .interest-wrap .icon span {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .ftco-about .my-interest .interest-wrap .text {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Links */
+body:not(.light-theme) a {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) a:hover {
+  color: var(--dark-accent-hover) !important;
+}
+
+/* Shadows */
+body:not(.light-theme) .shadow {
+  box-shadow: 0 0.5rem 1rem var(--dark-shadow) !important;
+}
+
+/* Scrollbar */
+body:not(.light-theme) ::-webkit-scrollbar {
+  width: 8px;
+}
+
+body:not(.light-theme) ::-webkit-scrollbar-track {
+  background: var(--dark-bg-secondary);
+}
+
+body:not(.light-theme) ::-webkit-scrollbar-thumb {
+  background: var(--dark-border);
+  border-radius: 4px;
+}
+
+body:not(.light-theme) ::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-accent);
+}
+
+/* Selection */
+body:not(.light-theme) ::selection {
+  background-color: var(--dark-accent);
+  color: var(--dark-text-primary);
+}
+
+/* Focus */
+body:not(.light-theme) *:focus {
+  outline-color: var(--dark-accent);
+}
+
+/* Loader */
+body:not(.light-theme) #ftco-loader {
+  background-color: var(--dark-bg-primary);
+}
+
+body:not(.light-theme) #ftco-loader .path {
+  stroke: var(--dark-accent);
+}
+
+/* Mobile responsive */
+@media (max-width: 767.98px) {
+  body:not(.light-theme) .ftco-navbar-light .navbar-nav {
+    background-color: var(--dark-bg-secondary);
+  }
+  
+  body:not(.light-theme) .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    color: var(--dark-text-secondary) !important;
+  }
+  
+  body:not(.light-theme) .hero .slider-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  body:not(.light-theme) .hero .slider-text .text {
+    padding: 1.5rem;
+  }
+  
+  body:not(.light-theme) .cv-section-title {
+    font-size: 1.3rem;
+  }
+  
+  body:not(.light-theme) .cv-item {
+    padding: 1rem;
+  }
+  
+  body:not(.light-theme) .progress-circle .bg-white {
+    margin-bottom: 1rem;
+  }
+  
+  body:not(.light-theme) .theme-toggle-btn {
+    width: 35px;
+    height: 35px;
+  }
+  
+  body:not(.light-theme) .skill-category {
+    padding: 1.5rem;
+  }
+  
+  body:not(.light-theme) .skill-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  body:not(.light-theme) .skill-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body:not(.light-theme) .hero .slider-text h1 {
+    font-size: 2rem;
+  }
+  
+  body:not(.light-theme) .hero-buttons .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  body:not(.light-theme) .cv-item-header h4 {
+    font-size: 1.1rem;
+  }
+  
+  body:not(.light-theme) .skill-category {
+    padding: 1rem;
+  }
+  
+  body:not(.light-theme) .skill-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  body:not(.light-theme) .skill-header i {
+    margin-right: 0;
+  }
+  
+  body:not(.light-theme) .skill-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* Theme Toggle Button */
+body:not(.light-theme) .theme-toggle-btn {
+  background: transparent;
+  border-color: var(--dark-accent) !important;
+  color: var(--dark-accent);
+  transition: all 0.3s ease;
+}
+
+body:not(.light-theme) .theme-toggle-btn:hover {
+  background: var(--dark-accent);
+  color: var(--dark-text-primary);
+  transform: scale(1.1);
+}
+
+body:not(.light-theme) .theme-toggle-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Skills Section Cards */
+body:not(.light-theme) .progress-circle .bg-white {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+  color: var(--dark-text-primary);
+}
+
+body:not(.light-theme) .progress-circle .text-gray {
+  color: var(--dark-text-secondary) !important;
+}
+
+body:not(.light-theme) .progress-circle .border-right {
+  border-color: var(--dark-border) !important;
+}
+
+/* Contact Form */
+body:not(.light-theme) .contact-section .contact-form {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+}
+
+body:not(.light-theme) .contact-section .contact-form .form-control {
+  background: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .contact-section .contact-form .form-control:focus {
+  background: var(--dark-bg-tertiary) !important;
+  border-color: var(--dark-accent) !important;
+  color: var(--dark-text-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+body:not(.light-theme) .contact-section .contact-form .form-control::placeholder {
+  color: var(--dark-text-muted) !important;
+}
+
+/* Skills Section Professional Styling */
+body:not(.light-theme) .skill-category {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+body:not(.light-theme) .skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--dark-accent), var(--dark-accent-hover));
+}
+
+body:not(.light-theme) .skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15);
+  border-color: var(--dark-accent);
+}
+
+body:not(.light-theme) .skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+body:not(.light-theme) .skill-header i {
+  font-size: 1.5rem;
+  color: var(--dark-accent);
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-bg-tertiary);
+  border-radius: 50%;
+}
+
+body:not(.light-theme) .skill-header h3 {
+  color: var(--dark-text-primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+body:not(.light-theme) .skill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+body:not(.light-theme) .skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body:not(.light-theme) .skill-item:last-child {
+  border-bottom: none;
+}
+
+body:not(.light-theme) .skill-name {
+  color: var(--dark-text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+body:not(.light-theme) .skill-level {
+  display: flex;
+  gap: 0.25rem;
+}
+
+body:not(.light-theme) .skill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dark-border);
+  transition: all 0.3s ease;
+}
+
+body:not(.light-theme) .skill-dot.active {
+  background: var(--dark-accent);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Featured Project Section Dark Theme */
+body:not(.light-theme) .ftco-project {
+  background: var(--dark-bg-secondary);
+}
+
+body:not(.light-theme) .project-container {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+  box-shadow: 0 10px 30px var(--dark-shadow);
+}
+
+body:not(.light-theme) .project-details {
+  color: var(--dark-text-primary) !important;
+}
+
+body:not(.light-theme) .project-details h3 {
+  color: var(--dark-text-primary);
+  font-weight: 600;
+}
+
+body:not(.light-theme) .project-details p {
+  color: var(--dark-text-secondary);
+  line-height: 1.6;
+}
+
+body:not(.light-theme) .project-features h5 {
+  color: var(--dark-accent) !important;
+  font-weight: 600;
+}
+
+body:not(.light-theme) .project-features ul li {
+  color: var(--dark-text-secondary);
+  font-size: 0.95rem;
+}
+
+body:not(.light-theme) .project-features ul li i {
+  color: var(--dark-accent) !important;
+}
+
+body:not(.light-theme) .project-tech h5 {
+  color: var(--dark-accent) !important;
+  font-weight: 600;
+}
+
+body:not(.light-theme) .tech-tags .badge {
+  background: var(--dark-accent) !important;
+  color: var(--dark-text-primary);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+body:not(.light-theme) .tech-tags .badge:hover {
+  background: var(--dark-accent-hover) !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+body:not(.light-theme) .project-links .btn {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+body:not(.light-theme) .project-links .btn-primary {
+  background: var(--dark-accent);
+  border-color: var(--dark-accent);
+}
+
+body:not(.light-theme) .project-links .btn-primary:hover {
+  background: var(--dark-accent-hover);
+  border-color: var(--dark-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+body:not(.light-theme) .project-links .btn-outline-primary {
+  color: var(--dark-accent);
+  border-color: var(--dark-accent);
+  background: transparent;
+}
+
+body:not(.light-theme) .project-links .btn-outline-primary:hover {
+  background: var(--dark-accent);
+  border-color: var(--dark-accent);
+  color: var(--dark-text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+body:not(.light-theme) .video-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body:not(.light-theme) .embed-responsive {
+  border-radius: 10px;
+}
+
+body:not(.light-theme) .embed-responsive-item {
+  border-radius: 10px;
+}
+
+/* Project section heading */
+body:not(.light-theme) .ftco-project .heading-section h2 {
+  color: var(--dark-text-primary);
+}
+
+body:not(.light-theme) .ftco-project .heading-section p {
+  color: var(--dark-text-secondary);
+}
+
+body:not(.light-theme) .ftco-project .heading-section .subheading {
+  color: var(--dark-accent);
+} 
